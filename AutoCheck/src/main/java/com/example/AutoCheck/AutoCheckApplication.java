@@ -25,6 +25,7 @@ public class AutoCheckApplication
 	@Scheduled(cron = "0 0 9 * * *")    //Runs every day at 9am
 	private static void task() throws MessagingException
 	{
+                //Scheduling a corn job
 		JavaMailUtil.sendMail("20tanu1999@gmail.com ");
 	}
 }
